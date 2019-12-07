@@ -5,6 +5,7 @@
 
   </head>
   <body>
+    <div id="my-label">The EPA PM2.5 AQI right here is:</div>
     <div style="width: 250px;" id='PurpleAirWidget_34707_module_AQI_conversion_C0_average_10_layer_standard'>Loading PurpleAir Widget...</div>
 <script src='https://www.purpleair.com/pa.widget.js?key=3NIOVDHUIK1RCOV8&module=AQI&conversion=C0&average=10&layer=standard&container=PurpleAirWidget_34707_module_AQI_conversion_C0_average_10_layer_standard'></script>
 
@@ -12,15 +13,22 @@
   body, html {
     margin: 0;
   }
+  #my-label {
+    position: absolute;
+    top: 28px;
+    left: 10px;
+  }
   .popup-conditions {
     width: 100%;
     float: none;
     font-size: 11px;
+    visibility: hidden;
   }
   .popup-aqi {
     float: none;
     width: 100%;
-    font-size: 190px;
+    font-size: 160px;
+    text-align: center;
   }
   .current-conditions {
     margin: 0;
