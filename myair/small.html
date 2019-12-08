@@ -1,12 +1,12 @@
 <html>
   <head>
     <title>The air quality at my house</title>
-    <meta name="viewport" content="width=250, initial-scale=2.5, maximum-scale=2.5, minimum-scale=2.5">
+    <meta name="viewport" content="width=250, initial-scale=1, maximum-scale=1, minimum-scale=1">
 
   </head>
   <body>
     <div id="my-label">The EPA PM2.5 AQI right here is:</div>
-    <div style="width: 250px;" id='PurpleAirWidget_34707_module_AQI_conversion_C0_average_10_layer_standard'>Loading PurpleAir Widget...</div>
+    <div style="width: 250px; background-color: red" id='PurpleAirWidget_34707_module_AQI_conversion_C0_average_10_layer_standard'>reloading...</div>
 <script src='https://www.purpleair.com/pa.widget.js?key=3NIOVDHUIK1RCOV8&module=AQI&conversion=C0&average=10&layer=standard&container=PurpleAirWidget_34707_module_AQI_conversion_C0_average_10_layer_standard'></script>
 
 <style>
@@ -34,11 +34,15 @@
   }
   .current-conditions {
     margin: 0;
+    padding-top: 0;
     border-radius: 0;
     padding-bottom: 200px;
   }
   #popupSensorInfo {
     display: none;
+  }
+  #popup-time-stamp{
+    transform: scale(0.7);
   }
 </style>
 
