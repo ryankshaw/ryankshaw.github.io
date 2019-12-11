@@ -9,7 +9,7 @@
       <div id="my-label-big">AIR QUALITY HERE</div>
       <div>The EPA PM2.5 AQI, as measured by the sensor right next to this, is:</div>
     </div>
-    <div style="background-color: black;" id='PurpleAirWidget_34707_module_AQI_conversion_C0_average_10_layer_standard'>Loading...</div>
+    <div class="outer-container" id='PurpleAirWidget_34707_module_AQI_conversion_C0_average_10_layer_standard'>Loading...</div>
 <script src='https://www.purpleair.com/pa.widget.js?key=3NIOVDHUIK1RCOV8&module=AQI&conversion=C0&average=10&layer=standard&container=PurpleAirWidget_34707_module_AQI_conversion_C0_average_10_layer_standard'></script>
 
 <style>
@@ -17,6 +17,11 @@
     margin: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
+  }
+  .outer-container {
+    background-color: black;
+    width: 1280px;
+    overflow: hidden;
   }
   #my-label {
     position: absolute;
