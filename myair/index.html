@@ -1,50 +1,52 @@
 <html>
   <head>
     <title>The air quality at my house</title>
-    <meta name="viewport" content="width=250, initial-scale=2.5, maximum-scale=2.5, minimum-scale=2.5">
+    <meta name="viewport" content="width=1280, initial-scale=1, maximum-scale=1, minimum-scale=1">
 
   </head>
   <body>
     <div id="my-label">
       <div id="my-label-big">AIR QUALITY HERE</div>
-      <div>The EPA PM2.5 AQI right here is:</div>
+      <div>The EPA PM2.5 AQI, as measured by the sensor right next to this, is:</div>
     </div>
-    <div style="width: 250px;" id='PurpleAirWidget_34707_module_AQI_conversion_C0_average_10_layer_standard'>Loading PurpleAir Widget...</div>
+    <div id='PurpleAirWidget_34707_module_AQI_conversion_C0_average_10_layer_standard'>Loading...</div>
 <script src='https://www.purpleair.com/pa.widget.js?key=3NIOVDHUIK1RCOV8&module=AQI&conversion=C0&average=10&layer=standard&container=PurpleAirWidget_34707_module_AQI_conversion_C0_average_10_layer_standard'></script>
 
 <style>
   body, html {
     margin: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
   }
   #my-label {
     position: absolute;
     top: 10px;
     left: 10px;
     text-align: center;
-    font-size: 7px;
+    width: 1280px;
   }
   .popup-time-stamp {
     text-align: center;
-    font-size: 6px;
   }
   #my-label-big {
-    font-size: 24px;
+    font-size: 111px;
+    font-weight: bold;
   }
   .popup-conditions {
     width: 100%;
     float: none;
-    font-size: 11px;
+    font-size: 0.8rem;
     visibility: hidden;
   }
   .popup-aqi {
     float: none;
     width: 100%;
-    margin-left: -17px;
-    font-size: 123px;
+    font-size: 460px;
     text-align: center;
+    padding-top: 80px;
   }
   .current-conditions {
+    max-width: 1280px;
     margin: 0;
     border-radius: 0;
     padding-top: 0;
@@ -52,6 +54,16 @@
   }
   #popupSensorInfo, .popup-sensor-name {
     display: none;
+  }
+  .legend-tooltip-popup {
+    margin-top: 1rem;
+    font-size: 2.2rem;
+  }
+  .current-conditions font {
+    font-size: 1.2rem
+  }
+  .legend-tooltip-popup .xxst {
+    font-size: 1.1rem
   }
 </style>
 
