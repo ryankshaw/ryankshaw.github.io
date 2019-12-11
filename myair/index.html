@@ -5,20 +5,31 @@
 
   </head>
   <body>
-    <div id="my-label">The EPA PM2.5 AQI right here is:</div>
+    <div id="my-label">
+      <div id="my-label-big">AIR QUALITY HERE</div>
+      <div>The EPA PM2.5 AQI right here is:</div>
+    </div>
     <div style="width: 250px;" id='PurpleAirWidget_34707_module_AQI_conversion_C0_average_10_layer_standard'>Loading PurpleAir Widget...</div>
 <script src='https://www.purpleair.com/pa.widget.js?key=3NIOVDHUIK1RCOV8&module=AQI&conversion=C0&average=10&layer=standard&container=PurpleAirWidget_34707_module_AQI_conversion_C0_average_10_layer_standard'></script>
 
 <style>
   body, html {
     margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
   #my-label {
     position: absolute;
-    top: 28px;
+    top: 10px;
     left: 10px;
-    font-size: 12px;
     text-align: center;
+    font-size: 6px;
+  }
+  .popup-time-stamp {
+    text-align: center;
+    font-size: 6px;
+  }
+  #my-label-big {
+    font-size: 24px;
   }
   .popup-conditions {
     width: 100%;
@@ -35,9 +46,10 @@
   .current-conditions {
     margin: 0;
     border-radius: 0;
+    padding-top: 0;
     padding-bottom: 200px;
   }
-  #popupSensorInfo {
+  #popupSensorInfo, .popup-sensor-name {
     display: none;
   }
 </style>
